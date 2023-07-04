@@ -1,0 +1,256 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/*My code starts here*/ 
+
+.nav{
+    display: flex;
+    background-color: #6FCE60;
+    height: 5vw;
+    justify-content: space-around; 
+}
+
+.name{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1vw;
+    background-color: #ffffff;
+    height: 3vw;
+    width: 15vw;
+    justify-content: space-around; 
+    text-align: center;
+    text-decoration: solid;
+    font-weight: 1000;
+    font-size: 1.4vw;   
+}
+/*first  row*/ 
+
+.row1{
+    display: flex;
+    flex-direction: row;
+}
+.elements1{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin-top: 1vw;
+    width: 50%;
+}
+
+.elements2{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    margin-top: 1vw;
+    width: 50%;
+}
+
+.sitelink{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: red;
+    text-decoration: none;
+    height: 5vw;
+    width: 12vw;
+    text-align: center; 
+    font-size: 1.5vw;
+    border-radius: 2vw;
+}
+
+.red-box{
+    background-image: radial-gradient( rgb(250, 0, 0), rgb(246, 200, 200));
+    height: 5vw;
+    width: 12vw;
+    border-radius: 2vw;
+
+}
+
+.hover-double{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #2293D3;
+    color: white;
+    height: 5vw;
+    width: 12vw;
+    text-align: center; 
+    font-size: 1.5vw;
+    border-radius: 2vw;
+}
+
+.hover-double:hover {
+    height: 10vw;
+    width: 24vw;
+    text-align: center; 
+    font-size: 3vw;
+    border-radius: 4vw;
+}
+
+.hover-single{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #2293D3;
+    color: white;
+    height: 5vw;
+    width: 12vw;
+    text-align: center; 
+    font-size: 1.5vw;
+    border-radius: 2vw;
+}
+
+/*first row done*/ 
+/*now move onto image*/ 
+
+.img-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    margin-top: 2vw;
+    margin-left: 7vw;
+    margin-right: 7vw;
+
+}
+
+
+.flip{
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+/* image done*/ 
+
+.row3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    height: 20vw;
+    margin-left: 7vw;
+    margin-right: 7vw;
+    margin-top: 2vw;
+}
+
+.text{
+    width: 40vw;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-size: 5vw;
+    font-weight: bolder;
+    text-decoration-color: #000;
+    -webkit-text-stroke: 0.1vw #2293D3 ;
+    max-height: 20vw;
+}
+
+.embed-site{
+    width: 40vw;
+    align-content: center;
+}
+
+/* last row starts*/ 
+
+.row4{
+    height: 4vw;
+    background-image: linear-gradient(to right, #F86363,#2393D2 );
+}
+
